@@ -2,7 +2,7 @@
 <html data-wf-page="6368300bc4f0de4a9d8417b5" data-wf-site="6368300bc4f0de279f8417b4">
 <head>
   <meta charset="utf-8">
-  <title>EdgeRoleplay 💀</title>
+  <title>BubbleCloud #1 GTA</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
   <div class="content">
     <div class="container-2 w-container">
       <div>
-        <a data-w-id="fd97c34e-0ce6-5332-f83e-8075cd6b6278" style="opacity:0" href="https://discord.com/invite/D5tRtaJn9g" class="button w-button">CONNECT</a>
+        <a data-w-id="fd97c34e-0ce6-5332-f83e-8075cd6b6278" style="opacity:0" href="https://discord.com/invite/D5tRtaJn9g" class="button w-button">CONNETTITI :D</a>
       </div>
     </div>
     <div class="header-logo w-container">
@@ -28,14 +28,8 @@
       <div class="w-layout-grid grid">
         <div id="w-node-b697e036-735e-08c0-bc5b-b13cca0d2141-9d8417b5">
           <h1 data-w-id="5f1a2e51-a3ab-5529-5457-621fa6de47d5" style="opacity:0" class="heading-2">Edge Roleplay 1.0</h1>
-          <div data-w-id="7d10a558-c8cd-9ea6-718c-d1ba93f2dfa5" style="opacity:0" class="text-block-2">Bubble (Role Play) - The best Role Play Server on<br>FiveM, join now to get exited!</div>
+          <div data-w-id="7d10a558-c8cd-9ea6-718c-d1ba93f2dfa5" style="opacity:0" class="text-block-2">Edge Roleplay è un mondo di<br>divertimento, ma anche complessità.<br>Fidati ti divertirai un mondo!</div>
           <a data-w-id="8cbfab13-cb16-26d0-f544-6175ac9f5780" style="opacity:0" href="https://discord.com/invite/D5tRtaJn9g" class="button-2 w-button">ENTRA ORA!</a>
-          <div class="html-embed w-embed">Online: <?php
-$file = file_get_contents('http://pixelstate.net:30120/dynamic.json');
-$decode = json_decode($file, false);
-$clients = $decode->clients;
-$svmaxclients = $decode->sv_maxclients;
-echo $clients;?>/64</div>
         </div>
         <div id="w-node-_41bf5a11-7bfa-2a66-18f0-2c74c625a795-9d8417b5"><img class="image-2" src="images/Design-ohne-Titel---2022-11-06T234739.496.png" width="600" alt="" style="opacity:0" sizes="(max-width: 500px) 100vw, 500px" data-w-id="bf036096-c189-8f3f-91b9-f62693555780" loading="lazy" srcset="images/Design-ohne-Titel---2022-11-06T234739.496-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T234739.496.png 500w"></div>
       </div>
@@ -43,7 +37,7 @@ echo $clients;?>/64</div>
     <div class="container-4 w-container">
       <div class="w-layout-grid grid-2">
         <div id="w-node-_3a9cc200-c06c-8fed-6e08-a4b490a70910-9d8417b5">
-          <div data-w-id="8e16d89c-cfaf-14dd-a274-405e794d9f68" style="opacity:0" class="text-block">OUR LINKS</div>
+          <div data-w-id="8e16d89c-cfaf-14dd-a274-405e794d9f68" style="opacity:0" class="text-block">LINKS</div>
         </div>
         <div id="w-node-abbf86c0-3ac5-ca79-cea8-2f6425308db3-9d8417b5" data-w-id="abbf86c0-3ac5-ca79-cea8-2f6425308db3" style="opacity:0" class="div-block">
           <a href="https://discord.com/invite/D5tRtaJn9g" class="button-6 w-button"><br>‍</a><img src="images/Design-ohne-Titel---2022-11-06T235554.447.png" loading="lazy" width="75" srcset="images/Design-ohne-Titel---2022-11-06T235554.447-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T235554.447.png 500w" sizes="75px" alt="">
@@ -62,7 +56,7 @@ echo $clients;?>/64</div>
   </div>
   <div data-w-id="20457081-b171-75af-2b5a-17a411b77587" style="opacity:0" class="background">
     <div class="square"></div>
-    <h1 class="heading-4">BUBBLE</h1>
+    <h1 class="heading-4">EDGE</h1>
     <div class="div-block-2"></div>
     <div class="div3"></div>
     <div class="div4"></div>

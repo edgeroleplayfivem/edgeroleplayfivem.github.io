@@ -2,7 +2,7 @@
 <html data-wf-page="6368300bc4f0de4a9d8417b5" data-wf-site="6368300bc4f0de279f8417b4">
 <head>
   <meta charset="utf-8">
-  <title>BubbleCloud #1 GTA</title>
+  <title>EdgeRoleplay 💀</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -27,9 +27,9 @@
     <div class="container-3 w-container">
       <div class="w-layout-grid grid">
         <div id="w-node-b697e036-735e-08c0-bc5b-b13cca0d2141-9d8417b5">
-          <h1 data-w-id="5f1a2e51-a3ab-5529-5457-621fa6de47d5" style="opacity:0" class="heading-2">Bubble Role Play</h1>
+          <h1 data-w-id="5f1a2e51-a3ab-5529-5457-621fa6de47d5" style="opacity:0" class="heading-2">Edge Roleplay 1.0</h1>
           <div data-w-id="7d10a558-c8cd-9ea6-718c-d1ba93f2dfa5" style="opacity:0" class="text-block-2">Bubble (Role Play) - The best Role Play Server on<br>FiveM, join now to get exited!</div>
-          <a data-w-id="8cbfab13-cb16-26d0-f544-6175ac9f5780" style="opacity:0" href="https://discord.com/invite/D5tRtaJn9g" class="button-2 w-button">JOIN NOW</a>
+          <a data-w-id="8cbfab13-cb16-26d0-f544-6175ac9f5780" style="opacity:0" href="https://discord.com/invite/D5tRtaJn9g" class="button-2 w-button">ENTRA ORA!</a>
           <div class="html-embed w-embed">Online: <?php
 $file = file_get_contents('http://pixelstate.net:30120/dynamic.json');
 $decode = json_decode($file, false);

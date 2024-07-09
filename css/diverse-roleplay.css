@@ -68,8 +68,8 @@
   left: auto;
   padding: 15px 60px;
   border-radius: 5px;
-  background-color: #ffc100;
-  box-shadow: 0 0 20px 0 #ffc100;
+  background-color: #26d10f;
+  box-shadow: 0 0 20px 0 #178309;
   font-family: Panton, sans-serif;
   color: #000;
   font-style: normal;
@@ -112,7 +112,7 @@
   top: 338px;
   width: 35px;
   height: 40px;
-  background-color: #ffc100;
+  background-color: #26d10f;
   -webkit-transform: skew(0deg, 15deg);
   -ms-transform: skew(0deg, 15deg);
   transform: skew(0deg, 15deg);
@@ -145,8 +145,8 @@
 
 .button-3 {
   padding: 40px 40px 20px;
-  background-image: url('../images/Design-ohne-Titel---2022-11-06T233801.540.png'), -webkit-gradient(linear, left top, left bottom, from(#ffc100), to(#ffc100));
-  background-image: url('../images/Design-ohne-Titel---2022-11-06T233801.540.png'), linear-gradient(180deg, #ffc100, #ffc100);
+  background-image: url('../images/Design-ohne-Titel---2022-11-06T233801.540.png'), -webkit-gradient(linear, left top, left bottom, from(#26d10f), to(#26d10f));
+  background-image: url('../images/Design-ohne-Titel---2022-11-06T233801.540.png'), linear-gradient(180deg, #26d10f, #26d10f);
   background-position: 50% 50%, 0px 0px;
   background-size: cover, auto;
   background-attachment: scroll, scroll;
@@ -201,7 +201,7 @@
   margin-top: -22px;
   margin-left: 66px;
   padding-right: 0px;
-  background-color: #ffc100;
+  background-color: #26d10f;
   opacity: 0.5;
 }
 
@@ -212,7 +212,7 @@
   margin-left: 66px;
   padding-right: 0px;
   border-radius: 100px;
-  background-color: #ffc100;
+  background-color: #26d10f;
   opacity: 0.5;
 }
 
@@ -223,7 +223,7 @@
   margin-left: 66px;
   padding-right: 0px;
   border-radius: 100px;
-  background-color: #ffc100;
+  background-color: #26d10f;
   opacity: 0.5;
 }
 
@@ -234,7 +234,7 @@
   margin-left: 66px;
   padding-right: 0px;
   border-radius: 100px;
-  background-color: #ffc100;
+  background-color: #26d10f;
   opacity: 0.5;
 }
 

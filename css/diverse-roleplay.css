@@ -6,10 +6,44 @@ html, body {
 
 .body {
   overflow-x: hidden;
+  background-color: #000; /* Assicura che lo sfondo sia nero */
 }
 
 .section {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .main-nav {
@@ -41,6 +75,7 @@ html, body {
   text-decoration: none;
   font-weight: bold;
 }
+
 
 .w-layout-grid {
   display: -ms-grid;
@@ -141,15 +176,6 @@ html, body {
   font-family: Panton, sans-serif;
 }
 
-.background {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 1;
-}
-
 .heading-3 {
   text-align: center;
 }
@@ -173,15 +199,6 @@ html, body {
   color: #000000;
   font-size: 16px;
   font-weight: 900;
-}
-
-.button-3 {
-  padding: 40px 40px 20px;
-  background-image: url('../images/Design-ohne-Titel---2022-11-06T233801.540.png'), -webkit-gradient(linear, left top, left bottom, from(#26d10f), to(#26d10f));
-  background-image: url('../images/Design-ohne-Titel---2022-11-06T233801.540.png'), linear-gradient(180deg, #26d10f, #26d10f);
-  background-position: 50% 50%, 0px 0px;
-  background-size: cover, auto;
-  background-attachment: scroll, scroll;
 }
 
 .image-2 {
@@ -280,7 +297,7 @@ html, body {
 
 .body {
   background-color: transparent;
-  background-image: url('../images/Design-ohne-Titel---2022-11-07T195207.666.png');
+  background-image: url('../images/sfondoedge.mp4');
   background-position: 0px 0px;
   background-size: cover;
 }

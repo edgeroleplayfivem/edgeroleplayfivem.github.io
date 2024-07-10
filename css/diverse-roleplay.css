@@ -106,18 +106,6 @@
   z-index: 1;
 }
 
-.square {
-  position: absolute;
-  left: 475px;
-  top: 338px;
-  width: 35px;
-  height: 40px;
-  background-color: #26d10f;
-  -webkit-transform: skew(0deg, 15deg);
-  -ms-transform: skew(0deg, 15deg);
-  transform: skew(0deg, 15deg);
-}
-
 .heading-3 {
   text-align: center;
 }
@@ -181,7 +169,7 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-family: 'League Spartan', sans-serif;
-  color: #000;
+  color: #000000;
   font-weight: 900;
 }
 
@@ -365,32 +353,167 @@
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
 }
+.main-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-@font-face {
-  font-family: 'Panton';
-  src: url('../fonts/Panton-BlackCaps.otf') format('opentype');
-  font-weight: 900;
+.nav-container {
+  background-color: #26d10f;
+  border-radius: 15px;
+  padding: 20px 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Panton, sans-serif;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Panton';
-  src: url('../fonts/Panton-BlackitalicCaps.otf') format('opentype');
+  font-size: 16px;
   font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
 }
-@font-face {
-  font-family: 'Panton';
-  src: url('../fonts/Panton-LightCaps.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+
+.nav-links a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
 }
-@font-face {
-  font-family: 'Panton';
-  src: url('../fonts/Panton-LightitalicCaps.otf') format('opentype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+
+@media screen and (max-width: 768px) {
+
+  .main-nav {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+  }
+
+  .nav-container {
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    display: block;
+    padding: 5px 0;
+  }
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.main-nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+  @font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton-BlackCaps.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton-BlackitalicCaps.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton-LightCaps.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton-LightitalicCaps.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .page-container {
+    height: 200vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .section {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+  }
+  
+  .content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  

@@ -97,7 +97,7 @@ html, body {
 
 /* Assicurati che il contenuto principale non sia nascosto dietro l'header fisso */
 .page-container {
-  padding-top: 80px; /* Regola questo valore in base all'altezza del tuo header */
+  padding-top: 160px; /* Regola questo valore in base all'altezza del tuo header */
 }
 
 .content {
@@ -458,13 +458,13 @@ html, body {
 }
 .main-nav {
   position: absolute;
-  top: 20px;
+  top: 35px;
   right: 20px;
   z-index: 1000;
 }
 
 .nav-container {
-  background-color: #26d10f;
+  background-color: rgba(38, 209, 15, 0.8); /* Aggiungi un po' di trasparenza */
   border-radius: 15px;
   padding: 20px 20px;
 }

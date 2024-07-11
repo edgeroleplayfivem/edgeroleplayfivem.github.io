@@ -75,10 +75,7 @@
     <div class="div5"></div>
 
     <div class="background">
-      <video autoplay loop muted playsinline>
-        <source src="images/sfondoedge.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <img src="images/sfondoedge.gif" alt="Background animation">
     </div>
 
 </div>
@@ -128,10 +125,7 @@
 <div class="div5"></div>
 
 <div class="background">
-  <video autoplay loop muted playsinline>
-    <source src="images/sfondoedge.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <img src="images/sfondoedge.gif" alt="Background animation">
 </div>
 
 </div>
@@ -141,11 +135,39 @@
     
     <script>
       document.querySelector('.page-container').addEventListener('wheel', function(e) {
-        if (e.deltaY !== 0) {
-          e.preventDefault();
-          window.scrollBy(0, e.deltaY);
-        }
-      }, { passive: false });
+  e.preventDefault();
+  const delta = e.deltaY;
+  const scrollContainer = this;
+  const currentScroll = scrollContainer.scrollTop;
+  const targetScroll = currentScroll + delta;
+
+  smoothScrollTo(scrollContainer, targetScroll, 300);
+}, { passive: false });
+
+function smoothScrollTo(element, target, duration) {
+  const start = element.scrollTop;
+  const change = target - start;
+  const startTime = performance.now();
+
+  function animateScroll(currentTime) {
+    const elapsedTime = currentTime - startTime;
+    if (elapsedTime > duration) {
+      element.scrollTop = target;
+      return;
+    }
+    element.scrollTop = easeInOutQuad(elapsedTime, start, change, duration);
+    requestAnimationFrame(animateScroll);
+  }
+
+  requestAnimationFrame(animateScroll);
+}
+
+function easeInOutQuad(t, b, c, d) {
+  t /= d / 2;
+  if (t < 1) return c / 2 * t * t + b;
+  t--;
+  return -c / 2 * (t * (t - 2) - 1) + b;
+}
     </script>
 
 </body>

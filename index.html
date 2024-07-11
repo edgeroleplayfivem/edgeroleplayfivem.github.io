@@ -50,7 +50,7 @@
                     <div id="w-node-b697e036-735e-08c0-bc5b-b13cca0d2141-9d8417b5">
                         <h1 data-w-id="5f1a2e51-a3ab-5529-5457-621fa6de47d5" style="opacity:0" class="heading-2">Edge Roleplay 1.0</h1>
                         <div data-w-id="7d10a558-c8cd-9ea6-718c-d1ba93f2dfa5" style="opacity:0" class="text-block-2">Edge Roleplay è un mondo di<br>divertimento, ma anche complessità.<br>Fidati ti divertirai un mondo!</div>
-                        <a data-w-id="8cbfab13-cb16-26d0-f544-6175ac9f5780" style="opacity:0" onClick="window.alert('Rimani Aggiornato! 😏')" class="button-2 w-button">ENTRA ORA!</a>
+                        <a id="entraOraButton" data-w-id="8cbfab13-cb16-26d0-f544-6175ac9f5780" style="opacity:0" class="button-2 w-button">ENTRA ORA!</a>
                     </div>
                     <div id="w-node-_41bf5a11-7bfa-2a66-18f0-2c74c625a795-9d8417b5">
                         <img class="image-2" src="images/Design-ohne-Titel---2022-11-06T234739.496.png" width="600" alt="" style="opacity:0" sizes="(max-width: 500px) 100vw, 500px" data-w-id="bf036096-c189-8f3f-91b9-f62693555780" loading="lazy" srcset="images/Design-ohne-Titel---2022-11-06T234739.496-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T234739.496.png 500w">
@@ -69,10 +69,10 @@
                         <a href="https://www.youtube.com/channel/UCY74oAkiBQ2VAYe0h3sszwQ" class="button-5 w-button"><br>‍</a><img src="images/Design-ohne-Titel---2022-11-06T235648.474.png" loading="lazy" width="75" srcset="images/Design-ohne-Titel---2022-11-06T235648.474-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T235648.474.png 500w" sizes="75px" alt="" class="image-3">
                     </div>
                     <div id="w-node-dd1ffc17-3e8c-8b61-4318-0a57108c5969-9d8417b5" data-w-id="dd1ffc17-3e8c-8b61-4318-0a57108c5969" style="opacity:0" class="div-block">
-                        <a onClick="window.alert('Tebex In ARRIVO!')" class="button5 w-button"><br>‍</a><img src="images/Design-ohne-Titel---2022-11-06T235718.458.png" loading="lazy" width="75" srcset="images/Design-ohne-Titel---2022-11-06T235718.458-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T235718.458.png 500w" sizes="75px" alt="">
+                        <a id="tebexButton" class="button5 w-button"><br>‍</a><img src="images/Design-ohne-Titel---2022-11-06T235718.458.png" loading="lazy" width="75" srcset="images/Design-ohne-Titel---2022-11-06T235718.458-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T235718.458.png 500w" sizes="75px" alt="">
                     </div>
                     <div id="w-node-b8cc9362-05d2-b704-fe25-ac8f58f13102-9d8417b5" data-w-id="b8cc9362-05d2-b704-fe25-ac8f58f13102" style="opacity:0" class="div-block">
-                        <a onClick="window.alert('IG In ARRIVO!')" class="button7 w-button"><br>‍</a><img src="images/Design-ohne-Titel---2022-11-06T235753.465.png" loading="lazy" width="75" srcset="images/Design-ohne-Titel---2022-11-06T235753.465-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T235753.465.png 500w" sizes="75px" alt="">
+                        <a id="igButton" class="button7 w-button"><br>‍</a><img src="images/Design-ohne-Titel---2022-11-06T235753.465.png" loading="lazy" width="75" srcset="images/Design-ohne-Titel---2022-11-06T235753.465-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T235753.465.png 500w" sizes="75px" alt="">
                     </div>
                 </div>
             </div>
@@ -99,12 +99,12 @@
     <script src="js/diverse-roleplay.js" type="text/javascript"></script>
     
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+        document.addEventListener('DOMContentLoaded', function() {
             const sections = document.querySelectorAll('.section');
             let isScrolling = false;
             let currentSection = 0;
 
-            window.addEventListener('wheel', (e) => {
+            window.addEventListener('wheel', function(e) {
                 e.preventDefault();
                 
                 if (!isScrolling) {
@@ -115,11 +115,39 @@
                     
                     sections[currentSection].scrollIntoView({ behavior: 'smooth' });
 
-                    setTimeout(() => {
+                    setTimeout(function() {
                         isScrolling = false;
                     }, 1000);
                 }
             }, { passive: false });
+
+            // Gestione degli eventi per i pulsanti
+            document.getElementById('entraOraButton').addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Entra Ora button clicked');
+                window.alert('Rimani Aggiornato! 😏');
+            });
+
+            document.getElementById('tebexButton').addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Tebex button clicked');
+                window.alert('Tebex In ARRIVO!');
+            });
+
+            document.getElementById('igButton').addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('IG button clicked');
+                window.alert('IG In ARRIVO!');
+            });
+
+            // Debug per tutti i pulsanti
+            const buttons = document.querySelectorAll('a.w-button');
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function(e) {
+                    console.log('Button clicked:', this);
+                    console.log('Button style:', window.getComputedStyle(this));
+                });
+            });
         });
     </script>
 </body>

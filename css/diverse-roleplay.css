@@ -5,14 +5,21 @@ html, body {
 }
 
 .body {
-  overflow-x: hidden;
-  background-color: #000; /* Assicura che lo sfondo sia nero */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.page-container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 1;
 }
 
 .section {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .background {
@@ -30,17 +37,36 @@ html, body {
   object-fit: cover;
 }
 
-.content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  height: 100vh;
-  overflow-y: auto;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Colore di sfondo con opacità */
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* o la larghezza che preferisci */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  /* Stili per il contenitore del logo */
+}
+
+.logo img {
+  width: 120px; /* o la dimensione che preferisci */
+  height: auto;
 }
 
 .main-nav {
-  position: fixed;
+  position: ;
   top: 20px;
   right: 20px;
   z-index: 1000;
@@ -53,20 +79,29 @@ html, body {
 }
 
 .nav-links {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-  display: inline-block;
-  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Assicurati che il contenuto principale non sia nascosto dietro l'header fisso */
+.page-container {
+  padding-top: 80px; /* Regola questo valore in base all'altezza del tuo header */
+}
+
+.content {
+  padding-top: 100px; /* Regola questo valore in base all'altezza del tuo header */
 }
 
 
@@ -167,6 +202,7 @@ html, body {
 .heading-2 {
   margin-top: 121px;
   font-family: Panton, sans-serif;
+  color: #26d10f;
 }
 
 .heading-3 {
@@ -180,6 +216,7 @@ html, body {
   opacity: 0.1;
   font-size: 150px;
   text-align: center;
+  color: #26d10f;
 }
 
 .button-2 {
@@ -200,12 +237,11 @@ html, body {
 }
 
 .container-4 {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: 0%;
-  margin-top: 236px;
+  position: fixed;
+  left: 0;
+  top: 54%;
+  transform: translateY(-50%);
+  z-index: 1000;
   padding-left: 33px;
 }
 
@@ -223,7 +259,7 @@ html, body {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-family: 'League Spartan', sans-serif;
-  color: #000000;
+  color: #26d10f;
   font-weight: 900;
 }
 
@@ -235,6 +271,7 @@ html, body {
 .text-block-2 {
   font-family: 'League Spartan', sans-serif;
   font-weight: 600;
+  color: #26d10f;
 }
 
 .div-block-2 {
@@ -329,6 +366,18 @@ html, body {
   margin-left: -40px;
   padding: 8px 0px 27px 73px;
   background-color: transparent;
+}
+
+.fixed-logo {
+  position: fixed;
+  top: -120px;
+  left: -210px;
+  z-index: 1000;
+}
+
+.fixed-logo .image {
+  position: static;
+  width: 120px;
 }
 
 #w-node-b697e036-735e-08c0-bc5b-b13cca0d2141-9d8417b5 {

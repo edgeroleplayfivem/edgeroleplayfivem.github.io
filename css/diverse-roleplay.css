@@ -270,6 +270,78 @@ body::-webkit-scrollbar-thumb {
   visibility: visible !important;
 }
 
+#server-history {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+#server-history h2 {
+  color: #39ff14;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: Panton;
+  margin-bottom: 1%;
+}
+
+#server-history2 .history-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 45%;
+  margin-left: 51%;
+  margin-top: -25%;
+  height: 600px;
+}
+
+#server-history .lead {
+  font-size: 1.2rem;
+  color: #39ff14;
+}
+
+#server-history p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#server-history img {
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+  max-width: 90%;
+}
+
+#server-history .col-md-6:first-child {
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#server-history img {
+  max-width: 50%;
+  height: auto;
+  box-shadow: 0 0 20px #39ff1480;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: auto;
+}
+
+.image-container {
+  position: relative;
+  height: 600px; /* Imposta un'altezza fissa o usa un valore percentuale */
+}
+
+.image-container img {
+  position: absolute;
+  left: 0; /* Modifica questo valore per spostare l'immagine orizzontalmente */
+  top: 50%; /* Centra verticalmente l'immagine */
+  transform: translateY(-50%);
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* Media queries */
 
 /* Dispositivi mobili piccoli (fino a 320px) */

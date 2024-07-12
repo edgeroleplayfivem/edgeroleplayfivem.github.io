@@ -47,13 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
       button.addEventListener('click', function(e) {
         if (this.id === 'entraOraButton') {
           e.preventDefault();
-          window.alert('Rimani Aggiornato! 😏');
+          alert('Rimani Aggiornato! 😏');
         } else if (this.id === 'tebexButton') {
           e.preventDefault();
-          window.alert('Tebex In ARRIVO!');
+          alert('Tebex In ARRIVO!');
         } else if (this.id === 'igButton') {
           e.preventDefault();
-          window.alert('IG In ARRIVO!');
+          alert('IG In ARRIVO!');
         }
         // Non preveniamo il comportamento predefinito per gli altri pulsanti
       });

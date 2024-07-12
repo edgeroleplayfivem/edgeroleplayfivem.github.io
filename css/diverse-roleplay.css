@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Background */
 .background {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -68,30 +68,26 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Aggiungi un background semi-trasparente se necessario */
 }
 
 .header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px; /* Aggiusta il padding come preferisci */
+}
+
+.logo {
+  margin-right: auto; /* Questo spingerà il logo a sinistra */
 }
 
 .logo img {
-  width: 120px;
-  height: auto;
+  max-height: 120px; /* Aggiusta l'altezza del logo come preferisci */
+  width: auto;
 }
 
-/* Navigazione principale */
 .main-nav {
-  position: absolute;
-  top: 35px;
-  right: 20px;
-  z-index: 1000;
+  /* Rimuovi o commenta eventuali stili che potrebbero interferire con il posizionamento */
 }
 
 .nav-container {
@@ -136,7 +132,7 @@ body::-webkit-scrollbar-thumb {
 /* Container per i social media */
 .container-4 {
   position: fixed;
-  left: 20px;
+  left: 40px;
   top: 45%;
   transform: translateY(-50%);
   z-index: 1000;

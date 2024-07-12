@@ -50,7 +50,7 @@
                     <div id="w-node-b697e036-735e-08c0-bc5b-b13cca0d2141-9d8417b5">
                         <h1 data-w-id="5f1a2e51-a3ab-5529-5457-621fa6de47d5" style="opacity:0" class="heading-2">Edge Roleplay 1.0</h1>
                         <div data-w-id="7d10a558-c8cd-9ea6-718c-d1ba93f2dfa5" style="opacity:0" class="text-block-2">Edge Roleplay è un mondo di<br>divertimento, ma anche complessità.<br>Fidati ti divertirai un mondo!</div>
-                        <a id="entraOraButton" data-w-id="8cbfab13-cb16-26d0-f544-6175ac9f5780" style="opacity:0" class="button-2 w-button">ENTRA ORA!</a>
+                        <a id="entraOraButton" class="button-2 w-button" onclick="entraOra()">ENTRA ORA!</a>
                     </div>
                     <div id="w-node-_41bf5a11-7bfa-2a66-18f0-2c74c625a795-9d8417b5">
                         <img class="image-2" src="images/Design-ohne-Titel---2022-11-06T234739.496.png" width="600" alt="" style="opacity:0" sizes="(max-width: 500px) 100vw, 500px" data-w-id="bf036096-c189-8f3f-91b9-f62693555780" loading="lazy" srcset="images/Design-ohne-Titel---2022-11-06T234739.496-p-500.png 500w, images/Design-ohne-Titel---2022-11-06T234739.496.png 500w">
@@ -78,15 +78,6 @@
                         </a>
                     </div>
                 </div>
-
-            <div data-w-id="20457081-b171-75af-2b5a-17a411b77587" style="opacity:0" class="background">
-                <div class="square"></div>
-                <h1 class="heading-4">EDGE</h1>
-                <div class="div-block-2"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
-                <div class="div5"></div>
-            </div>
         </section>
 
         <section class="section" id="section2">
@@ -125,12 +116,6 @@
             }, { passive: false });
 
             // Gestione degli eventi per i pulsanti
-            document.getElementById('entraOraButton').addEventListener('click', function(e) {
-                e.preventDefault();
-                console.log('Entra Ora button clicked');
-                window.alert('Rimani Aggiornato! 😏');
-            });
-
             document.getElementById('tebexButton').addEventListener('click', function(e) {
                 e.preventDefault();
                 console.log('Tebex button clicked');
@@ -153,5 +138,6 @@
             });
         });
     </script>
+        <script src="js/buttons.js"></script>
 </body>
 </html>

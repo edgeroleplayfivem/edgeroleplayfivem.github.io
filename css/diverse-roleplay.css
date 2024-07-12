@@ -283,3 +283,8 @@ body::-webkit-scrollbar-thumb {
   font-style: italic;
   font-display: swap;
 }
+
+.w-button {
+  opacity: 1 !important;
+  visibility: visible !important;
+}

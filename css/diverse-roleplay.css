@@ -194,6 +194,34 @@ body::-webkit-scrollbar-thumb {
   color: #000000;
   font-size: 16px;
   font-weight: 900;
+  transition: transform 0.3s ease;
+  
+}
+
+.button-2:hover {
+  transform: scale(1.1); /* Questo fa ingrandire il pulsante del 10% */
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;  /* Regola la dimensione del quadrato come desideri */
+  height: 50px; /* Dovrebbe essere uguale alla larghezza per un quadrato perfetto */
+  background-color: rgba(255, 255, 255, 0.2); /* Bianco semi-trasparente, modifica come preferisci */
+  border-radius: 10px; /* Per angoli arrotondati, rimuovi se vuoi angoli netti */
+  margin: 5px 0; /* Spazio tra le icone */
+  transition: all 0.3s ease; /* Per un effetto hover fluido */
+}
+
+.social-icon-container img {
+  width: 30px; /* Regola la dimensione dell'icona */
+  height: auto;
+}
+
+.social-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Leggermente più opaco all'hover */
+  transform: scale(1.1); /* Leggero ingrandimento all'hover */
 }
 
 .image-2 {
@@ -265,6 +293,11 @@ body::-webkit-scrollbar-thumb {
 .social-icons {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Questo fa ingrandire l'icona del 20% */
 }
 
 /* Media queries */

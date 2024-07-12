@@ -45,17 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('a.w-button');
     buttons.forEach(button => {
       button.addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('Button clicked:', this.className);
         if (this.id === 'entraOraButton') {
+          e.preventDefault();
           window.alert('Rimani Aggiornato! 😏');
-        } else if (this.className.includes('button-5')) {
-          // Azione per il pulsante YouTube
-        } else if (this.className.includes('button5')) {
+        } else if (this.id === 'tebexButton') {
+          e.preventDefault();
           window.alert('Tebex In ARRIVO!');
-        } else if (this.className.includes('button7')) {
+        } else if (this.id === 'igButton') {
+          e.preventDefault();
           window.alert('IG In ARRIVO!');
         }
+        // Non preveniamo il comportamento predefinito per gli altri pulsanti
       });
     });
   });

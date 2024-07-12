@@ -253,29 +253,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-icon-container {
-  display: fixed;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 65px;
   height: 65px;
-  background-color: #ffffff07;
+  background-color: #ffffff12;
   border-radius: 20px;
   transition: all 0.3s ease;
 }
 
 .social-icon-container:hover {
-  background-color: #ffffff23;
+  background-color: #ffffff3b;
   transform: scale(1.1);
 }
 
 .social-icon-container img {
-  width: 65px;
-  height: 65px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-}
-
-.section:not(:first-of-type) .social-container {
-  display: none;
 }
 
 .w-button {

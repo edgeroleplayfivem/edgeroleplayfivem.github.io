@@ -129,32 +129,6 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 
-/* Container per i social media */
-.container-4 {
-  position: fixed;
-  left: 40px;
-  top: 45%;
-  transform: translateY(-50%);
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grid-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.div-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 13px -5px #000;
-  color: #fff;
-}
-
 .div-block img {
   width: 50px;
   height: 50px;
@@ -206,22 +180,21 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;  /* Regola la dimensione del quadrato come desideri */
-  height: 50px; /* Dovrebbe essere uguale alla larghezza per un quadrato perfetto */
-  background-color: rgba(255, 255, 255, 0.2); /* Bianco semi-trasparente, modifica come preferisci */
-  border-radius: 10px; /* Per angoli arrotondati, rimuovi se vuoi angoli netti */
-  margin: 5px 0; /* Spazio tra le icone */
-  transition: all 0.3s ease; /* Per un effetto hover fluido */
+  width: 50px;  /* Dimensione del quadrato */
+  height: 50px; /* Uguale alla larghezza per un quadrato perfetto */
+  background-color: rgba(255, 255, 255, 0.2); /* Bianco semi-trasparente */
+  border-radius: 10px; /* Angoli arrotondati */
+  transition: all 0.3s ease;
+}
+
+.social-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }
 
 .social-icon-container img {
   width: 30px; /* Regola la dimensione dell'icona */
   height: auto;
-}
-
-.social-icon-container:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Leggermente più opaco all'hover */
-  transform: scale(1.1); /* Leggero ingrandimento all'hover */
 }
 
 .image-2 {
@@ -256,27 +229,10 @@ body::-webkit-scrollbar-thumb {
   margin-top: -27px;
 }
 
-.social-links-container {
-  display: fixed;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px; /* Spazio tra le icone */
-}
-
-.social-links-container a {
-  display: block;
-}
-
-.image-3 {
-  width: 75px;
-  height: 70px;
-  object-fit: contain;
-}
-
 .social-container {
   position: fixed;
   left: 20px;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -285,7 +241,7 @@ body::-webkit-scrollbar-thumb {
 
 .vertical-container {
   width: 2px;
-  height: 150px;
+  height: 200px; /* Aumentato per adattarsi a 4 icone */
   background-color: #ffffff;
   margin-right: 10px;
 }
@@ -293,44 +249,224 @@ body::-webkit-scrollbar-thumb {
 .social-icons {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px; /* Spazio tra le icone */
 }
 
-.social-icons a:hover {
-  transform: scale(1.2); /* Questo fa ingrandire l'icona del 20% */
+.social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.social-icon-container img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.w-button {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Media queries */
-@media screen and (max-width: 768px) {
-  .container-4 {
-    left: 10px;
-  }
 
-  .grid-2 {
-    gap: 10px;
+/* Dispositivi mobili piccoli (fino a 320px) */
+@media screen and (max-width: 320px) {
+  .logo img {
+    max-height: 60px;
   }
 
   .nav-container {
-    padding: 5px 10px;
+    padding: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .heading-2 {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .text-block-2 {
+    font-size: 14px;
+  }
+
+  .button-2 {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .social-container {
+    left: 10px;
+  }
+
+  .social-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon-container img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Dispositivi mobili (da 321px a 480px) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .logo img {
+    max-height: 80px;
+  }
+
+  .nav-container {
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   .nav-links a {
     font-size: 14px;
   }
 
+  .heading-2 {
+    font-size: 28px;
+    margin-top: 80px;
+  }
+
+  .text-block-2 {
+    font-size: 16px;
+  }
+
+  .button-2 {
+    padding: 10px 30px;
+  }
+}
+
+/* Tablet (da 481px a 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo img {
+    max-height: 100px;
+  }
+
+  .nav-container {
+    padding: 15px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .heading-2 {
+    font-size: 32px;
+    margin-top: 100px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .image-2 {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   .social-container {
-    flex-direction: column;
+    flex-direction: row;
+    left: 50%;
+    bottom: 20px;
+    top: auto;
+    transform: translateX(-50%);
   }
-  
+
   .vertical-container {
-    width: 100px;
-    height: 2px;
-    margin-right: 0;
-    margin-bottom: 20px;
+    display: none;
   }
-  
+
   .social-icons {
     flex-direction: row;
+  }
+}
+
+/* Desktop piccoli (da 769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container-3 {
+    margin-top: 150px;
+  }
+
+  .grid {
+    grid-gap: 20px;
+  }
+
+  .heading-2 {
+    font-size: 36px;
+  }
+
+  .image-2 {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* Desktop medi (da 1025px a 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container-3 {
+    margin-top: 180px;
+  }
+
+  .grid {
+    grid-gap: 30px;
+  }
+
+  .heading-2 {
+    font-size: 40px;
+  }
+}
+
+/* Desktop grandi (da 1201px in su) */
+@media screen and (min-width: 1201px) {
+  .container-3 {
+    margin-top: 215px;
+  }
+
+  .grid {
+    grid-gap: 40px;
+  }
+
+  .heading-2 {
+    font-size: 44px;
   }
 }
 
@@ -365,9 +501,4 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
   font-style: italic;
   font-display: swap;
-}
-
-.w-button {
-  opacity: 1 !important;
-  visibility: visible !important;
 }

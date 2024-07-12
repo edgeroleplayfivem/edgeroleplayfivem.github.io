@@ -74,7 +74,8 @@ body::-webkit-scrollbar-thumb {
 .header-content {
   display: flex;
   align-items: center;
-  padding: 10px 20px; /* Aggiusta il padding come preferisci */
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .logo {
@@ -230,41 +231,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-container {
-  position: fixed;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  z-index: 1000;
-}
-
-.vertical-container {
-  width: 2px;
-  height: 200px; /* Aumentato per adattarsi a 4 icone */
-  background-color: #ffffff;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: 130px; /* Spazio tra il pannello social e il menu */
 }
 
 .social-icons {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 10px; /* Spazio tra le icone */
 }
 
 .social-icon-container {
+  width: 65px;
+  height: 65px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65px;
-  height: 65px;
-  background-color: #ffffff07;
-  border-radius: 20px;
   transition: all 0.3s ease;
 }
 
 .social-icon-container:hover {
-  background-color: #ffffff23;
+  background-color: #ffffff33;
   transform: scale(1.1);
 }
 
@@ -370,6 +361,18 @@ body::-webkit-scrollbar-thumb {
   .button-2 {
     padding: 10px 30px;
   }
+  
+  .social-container {
+    margin-right: 0;
+  }
+
+ .vertical-container {
+    display: none;
+  }
+
+ .social-icons {
+  justify-content: center;
+  }
 }
 
 /* Tablet (da 481px a 768px) */
@@ -403,14 +406,6 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
   }
 
-  .social-container {
-    flex-direction: row;
-    left: 50%;
-    bottom: 20px;
-    top: auto;
-    transform: translateX(-50%);
-  }
-
   .vertical-container {
     display: none;
   }
@@ -418,6 +413,35 @@ body::-webkit-scrollbar-thumb {
   .social-icons {
     flex-direction: row;
   }
+
+  .social-container {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon-container {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon-container img {
+    width: 25px;
+    height: 25px;
+}
+
+.vertical-container {
+    height: 150px;
+}
+
+.header-content {
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  order: 2;
+}
 }
 
 /* Desktop piccoli (da 769px a 1024px) */
